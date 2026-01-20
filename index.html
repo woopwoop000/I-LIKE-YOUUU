@@ -31,15 +31,61 @@
       background: #ffffff;
       padding: 26px;
       border-radius: 30px;
-      box-shadow: 0 20px 45px rgba(180, 160, 220, 0.35);
+      box-shadow: 0 20px 45px rgba(180,160,220,0.35);
       position: relative;
       overflow: hidden;
+    }
+    
+    .cloud {
+      position: absolute;
+      background: #ffffff;
+      border-radius: 60px;
+      opacity: 0.9;
+      animation: float 12s infinite ease-in-out;
+    }
+
+    .cloud.one {
+      width: 140px;
+      height: 50px;
+      top: 40px;
+      left: -60px;
+    }
+
+    .cloud.two {
+      width: 190px;
+      height: 65px;
+      top: 140px;
+      right: -80px;
+      animation-delay: 3s;
+    }
+
+    .cloud.three {
+      width: 120px;
+      height: 45px;
+      bottom: 90px;
+      left: -50px;
+      animation-delay: 6s;
     }
 
     @keyframes float {
       0% { transform: translateY(0px); }
       50% { transform: translateY(-12px); }
       100% { transform: translateY(0px); }
+    }
+    
+    .nav {
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #fde7f3, #eaf7ff);
+      color: #6f8fbf;
+      font-size: 0.9rem;
+      box-shadow: 0 6px 15px rgba(180,160,220,0.25);
     }
 
     .header {
@@ -50,24 +96,19 @@
     .header h1 {
       color: #e89ac7;
       font-size: 2rem;
-      margin-bottom: 6px;
     }
 
     .header p {
       color: #8fbce8;
-      font-size: 1rem;
     }
 
     .cinn-wrap {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      text-align: center;
       margin: 22px 0;
     }
 
     .cinn-wrap img {
-      width: 155px;
-      max-width: 70%;
+      width: 150px;
       margin-bottom: 10px;
     }
 
@@ -76,37 +117,19 @@
       color: #6f8fbf;
       padding: 14px 18px;
       border-radius: 20px;
+      display: inline-block;
       font-size: 0.95rem;
-      text-align: center;
-      max-width: 90%;
-      position: relative;
-    }
-
-    .bubble::after {
-      content: "";
-      position: absolute;
-      bottom: -8px;
-      left: 50%;
-      transform: translateX(-50%);
-      border-width: 8px 8px 0 8px;
-      border-style: solid;
-      border-color: #fde7f3 transparent transparent transparent;
     }
 
     .message {
       color: #555;
-      line-height: 1.95;
+      line-height: 1.9;
       font-size: 1.05rem;
-      margin-top: 15px;
     }
 
     .message span {
       color: #e89ac7;
       font-weight: 600;
-    }
-
-    .end {
-      margin-top: 30px;
     }
 
     .footer {
@@ -115,26 +138,17 @@
       color: #8fbce8;
       font-size: 0.95rem;
     }
-
-    @media (max-width: 480px) {
-      .header h1 {
-        font-size: 1.7rem;
-      }
-
-      .message {
-        font-size: 1rem;
-      }
-
-      .cinn-wrap img {
-        width: 135px;
-      }
-    }
   </style>
 </head>
 <body>
 
+  <div class="card">
+    <div class="cloud one"></div>
+    <div class="cloud two"></div>
+    <div class="cloud three"></div>
+
     <div class="nav">
-      <a href="clues.html">View Clues of Me</a>
+      <a href="clues.html">🕵️‍♀️ View Clues</a>
     </div>
 
     <div class="header">
@@ -143,35 +157,18 @@
     </div>
 
     <div class="cinn-wrap">
-      <img src="cinna2.jpg">
-      <div class="bubble">
-        Cinnamoroll says:<br>
-        “This message is really important 🩵”
-      </div>
+      <img src="https://i.pinimg.com/originals/6a/7f/3c/6a7f3c1cba1c4c4f9d9c5a1f5c35d4d1.png">
+      <div class="bubble">“This message is really important 🩵”</div>
     </div>
 
     <div class="message">
-      I’ve been wanting to say this for a while na, and I figured the best way to do this is just this.<br><br>
+      I’ve been wanting to say this for a while na.<br><br>
 
       I really, really <span>adore you</span>. There’s something about you that quietly stands out in the most beautiful way.
-      Your eyes are literally super super duper so pretty, they have this thing na where it instantly makes everything feel
-      lighter when I see them. Not to even forget your smile??? It’s one of the cutest things I have ever seen, the kind that
-      stays in my head longer than it probably should.<br><br>
+      Your eyes and your smile stay in my head longer than they probably should.<br><br>
 
-      ALSO I <span>LOVEEE</span> how your glasses fit you so perfectly. They don’t just suit you yk, they feel like you.
-      SAKA yung mga outfits on your ig posts? The tita vibes are so, so adorable.
-      There’s just really something so charming about you. It makes you even more attractive, more cute in a way na parang
-      ang hirap iexplain but impossible not to notice.<br><br>
-
-      I made this not expecting anything. I just wanted you to know that someone sees you, admires you, and appreciates all
-      these little details that make you <span>you</span>. You genuinely make my life better just by being yourself.
-    </div>
-
-    <div class="cinn-wrap end">
-      <img src="cinna1.jpg">
-      <div class="bubble">
-        “Thank you for being you ☁️💗”
-      </div>
+      I love how your glasses suit you, your outfits, and how effortlessly charming you are.
+      I made this not expecting anything—just wanting you to know someone sees you and appreciates you.
     </div>
 
     <div class="footer">
