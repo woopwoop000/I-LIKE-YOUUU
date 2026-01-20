@@ -36,39 +36,6 @@
       overflow: hidden;
     }
 
-    /* floating clouds */
-    .cloud {
-      position: absolute;
-      background: #ffffff;
-      border-radius: 60px;
-      opacity: 0.9;
-      animation: float 12s infinite ease-in-out;
-    }
-
-    .cloud.one {
-      width: 140px;
-      height: 50px;
-      top: 30px;
-      left: -60px;
-      animation-delay: 0s;
-    }
-
-    .cloud.two {
-      width: 190px;
-      height: 65px;
-      top: 120px;
-      right: -80px;
-      animation-delay: 3s;
-    }
-
-    .cloud.three {
-      width: 120px;
-      height: 45px;
-      bottom: 80px;
-      left: -50px;
-      animation-delay: 6s;
-    }
-
     @keyframes float {
       0% { transform: translateY(0px); }
       50% { transform: translateY(-12px); }
@@ -165,11 +132,6 @@
   </style>
 </head>
 <body>
-
-  <div class="card">
-    <div class="cloud one"></div>
-    <div class="cloud two"></div>
-    <div class="cloud three"></div>
 
     <div class="nav">
       <a href="clues.html">View Clues of Me</a>
